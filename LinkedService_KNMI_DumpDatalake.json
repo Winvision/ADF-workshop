@@ -1,5 +1,5 @@
 {
-    "name": "KNMI_DumpDatalake,
+    "name": "KNMI_DumpDatalake",
     "type": "Microsoft.DataFactory/factories/linkedservices",
     "properties": {
         "annotations": [],
