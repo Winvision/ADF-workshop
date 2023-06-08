@@ -1,0 +1,22 @@
+{
+    "name": "KNMI_JSON_DATA",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "rest_KNMI",
+            "type": "LinkedServiceReference",
+            "parameters": {
+                "startDate": "20230429",
+                "endDate": "20230429"
+            }
+        },
+        "annotations": [],
+        "type": "Json",
+        "typeProperties": {
+            "location": {
+                "type": "HttpServerLocation"
+            }
+        },
+        "schema": {}
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
