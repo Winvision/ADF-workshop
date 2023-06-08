@@ -1,7 +1,7 @@
-CREATE USER [NaamVanADF] FROM EXTERNAL PROVIDER;​
+CREATE USER [ADF_Name] FROM EXTERNAL PROVIDER;​
 
-ALTER ROLE db_datareader ADD MEMBER [NaamVanADF]; ​
+ALTER ROLE db_datareader ADD MEMBER [ADF_Name]; ​
 
-ALTER ROLE db_datawriter ADD MEMBER [NaamVanADF]; ​
+ALTER ROLE db_datawriter ADD MEMBER [ADF_Name]; ​
 
-ALTER ROLE db_ddladmin ADD MEMBER [NaamVanADF];
+ALTER ROLE db_ddladmin ADD MEMBER [ADF_Name];
