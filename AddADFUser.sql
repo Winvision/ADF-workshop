@@ -1,0 +1,7 @@
+CREATE USER [NaamVanADF] FROM EXTERNAL PROVIDER;​
+
+ALTER ROLE db_datareader ADD MEMBER [NaamVanADF]; ​
+
+ALTER ROLE db_datawriter ADD MEMBER [NaamVanADF]; ​
+
+ALTER ROLE db_ddladmin ADD MEMBER [NaamVanADF];
