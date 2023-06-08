@@ -1,0 +1,11 @@
+{
+    "name": "KNMI_DumpeDatalake,
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "annotations": [],
+        "type": "AzureBlobFS",
+        "typeProperties": {
+            "url": "https://datalakemghrrutlgkcdm.dfs.core.windows.net/"
+        }
+    }
+}
