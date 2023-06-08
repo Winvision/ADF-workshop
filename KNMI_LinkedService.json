@@ -1,0 +1,21 @@
+{
+    "name": "rest_KNMI",
+    "type": "Microsoft.DataFactory/factories/linkedservices",
+    "properties": {
+        "parameters": {
+            "startDate": {
+                "type": "string"
+            },
+            "endDate": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "HttpServer",
+        "typeProperties": {
+            "url": "https://www.daggegevens.knmi.nl/klimatologie/uurgegevens?fmt=json&stns=257&vars=T&start=@{linkedService().startDate}&end=@{linkedService().endDate}}",
+            "enableServerCertificateValidation": true,
+            "authenticationType": "Anonymous"
+        }
+    }
+}
