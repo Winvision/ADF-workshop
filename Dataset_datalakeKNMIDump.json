@@ -1,0 +1,38 @@
+{
+    "name": "DataLakeKNMIDump",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "KNMI_DumpDatalake",
+            "type": "LinkedServiceReference"
+        },
+        "annotations": [],
+        "type": "Json",
+        "typeProperties": {
+            "location": {
+                "type": "AzureBlobFSLocation",
+                "fileSystem": "knmi"
+            }
+        },
+        "schema": {
+            "type": "object",
+            "properties": {
+                "Prop_0": {
+                    "type": "string"
+                },
+                "station_code": {
+                    "type": "integer"
+                },
+                "date": {
+                    "type": "string"
+                },
+                "hour": {
+                    "type": "integer"
+                },
+                "T": {
+                    "type": "integer"
+                }
+            }
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
