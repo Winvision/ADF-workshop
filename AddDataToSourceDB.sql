@@ -15,18 +15,18 @@
 
  
 
-    WHILE @COUNTER < 10
+    WHILE @COUNTER < 20
     BEGIN
     DECLARE @ROOMID  AS INT
 
-    IF @COUNTER <5 
+    IF @COUNTER <10
     BEGIN
     SET @ROOMID = 123
     INSERT INTO [dbo].[Adf_Inside_Temperature]
     VALUES(@ROOMID, @COUNTER, CONCAT('TempSensor', CAST(@ROOMID AS VARCHAR(MAX))),  DATEADD(hh,-@COUNTER,GETDATE()))
     END
 
-    IF @COUNTER >4 
+    IF @COUNTER >9
     BEGIN
     SET @ROOMID = 456
     INSERT INTO [dbo].[Adf_Inside_Temperature]
